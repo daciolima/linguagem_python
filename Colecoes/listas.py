@@ -103,17 +103,6 @@ for el in lista1:
 print(soma)
 
 
-"""
-
-# Exemplos
-lista1 = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10, 1]
-lista2 = ['d','a','c','i','o', ' ', 'l', 'i', 'm', 'a']
-lista3 = []
-lista4 = list(range(1, 11))
-lista5 = list('Dacio Lima')
-lista6 = ['Developer', 'Python', 'MongoDB', 'React']
-lista7 = [1, 2, True, 'Dacio', 'd', [1, 2, 3], 3334455566]
-
 carrinho = []
 produto = ''
 while produto != 'sair':
@@ -124,7 +113,47 @@ while produto != 'sair':
 for produto in carrinho:
     print(produto)
 
+# Utilizando variáveis em lista
+numeros = [1, 2, 3, 4, 5]
+print(numeros)
+num = 0
+num1 = 1
+num2 = 2
+num3 = 3
+num4 = 4
+num5 = 5
 
+numeros = [num, num1, num2, num3, num4, num5]
+print(numeros)
+
+# Acessando cores da lista, pense sempre como uma roda
+cores = ['vermelho', 'azul', 'Amarelo']
+print(cores[0])
+print(cores[1])
+print(cores[2])
+print(cores[3])
+print(cores[-1])
+
+cores = ['vermelho', 'azul', 'Amarelo']
+for cor in cores:
+    print(cor)
+
+indice = 0
+while indice < len(cores):
+    print(cores[indice])
+    indice = indice + 1
+
+
+"""
+
+# Exemplos
+lista1 = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10, 1]
+lista2 = ['d','a','c','i','o', ' ', 'l', 'i', 'm', 'a']
+lista3 = []
+lista4 = list(range(1, 11))
+lista5 = list('Dacio Lima')
+lista6 = ['Developer', 'Python', 'MongoDB', 'React']
+lista7 = [1, 2, True, 'Dacio', 'd', [1, 2, 3], 3334455566]
 
 
 
