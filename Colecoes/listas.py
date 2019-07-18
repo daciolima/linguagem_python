@@ -134,16 +134,102 @@ print(cores[2])
 print(cores[3])
 print(cores[-1])
 
+# Iterar usando for
 cores = ['vermelho', 'azul', 'Amarelo']
 for cor in cores:
     print(cor)
 
+# Iterar usando o while
 indice = 0
 while indice < len(cores):
     print(cores[indice])
     indice = indice + 1
 
 
+# Gerar indice em um for
+for ind, cor in enumerate(cores):
+    print(ind, cor)
+
+# Lista aceitam repetição
+lista = []
+lista.append(42)
+lista.append(42)
+lista.append(36)
+print(lista)
+
+# Encontrar o index baseado no valor passado por parametro, retorna o index do primeiro valor encontrado
+numeros = [1, 5, 7, 8, 9, 45, 67]
+print(numeros.index(9))
+
+# Busca index dos valores a partir do index informado, no exemplo: procurar o 45 a partir do index 3
+numeros = [1, 5, 7, 8, 9, 45, 67]
+print(numeros.index(45, 3))
+
+# Busca index dos valores entre os index informados, no exemplo: procurar o 45 entre os index 3 e 6
+numeros = [1, 5, 7, 8, 9, 45, 67]
+print(numeros.index(45, 3, 6))
+
+# Realiza troca de valores nos index
+lista6 = ['Developer', 'Python', 'MongoDB', 'React']
+lista6[0], lista6[1] = lista6[2], lista6[3]
+print(lista6)
+
+
+
+# Revisão de slicing
+# lista[inicio:fim:passo]
+# range[inicio:fim:passo]
+
+# Exemplo
+lista1 = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10, 1]
+print(lista1[::])  # Pega todos os elementos
+print(lista1[1:])  # Pega todos os elementos a partir do index 1
+print(lista1[:2])  # Pega todos os elementos até o index 2
+print(lista1[1:3])  # Pega todos os elementos do index 1 até o 3
+print(lista1[1:-1])  # Pega todos os elementos do index 1 até o último
+print(lista1[1::2])  # Pega todos os elementos do index 1 até o último pegando de 2 em 2
+print(lista1[::2])  # Pega todos os elementos do index 0 até o último pegando de 2 em 2
+print(lista1[::-1])  # Pega todos os elementos do index 0 até o último pegando do último até o primeiro
+lista5 = list('Dacio Lima')
+print(lista5[::-1])
+
+# Buscas
+print(sum(lista1))# Soma os valores - Somente numeros reais
+print(min(lista1))# Menor valores - Somente numeros reais
+print(max(lista1))# Maior valores - Somente numeros reais
+print(len(lista1))# Tamanho da lista - Todos so tipos de dados
+
+
+# Transformação de lista em tupla
+print(lista1)
+print(type(lista1))
+
+tupla = tuple(lista1)
+print(tupla)
+print(type(tupla))
+
+# Desempacotamento de lista, O numero de variáveis deve ser igual ao número de elementos a serem desempacotados
+num1, num2, num3 = lista1
+print(num1)
+print(num2)
+print(num3)
+
+# Copiando uma lista para outra(Deep Copy e Shallow Copy)
+# Forma 1 - (Deep Copy) - Realiza copia sem afetar a lista anterior
+print(lista1)
+nova = lista1.copy()  #  <- Deep Copy
+print(nova)
+nova.append(50)
+print(lista1)
+print(nova)
+
+# Forma 2 - (Shallow Copy) - Realiza copia afetando lista anterior
+print(lista1)
+nova = lista1   #  <- Shallow Copy
+print(nova)
+nova.append(50)
+print(lista1)
+print(nova)
 """
 
 # Exemplos
@@ -154,6 +240,14 @@ lista4 = list(range(1, 11))
 lista5 = list('Dacio Lima')
 lista6 = ['Developer', 'Python', 'MongoDB', 'React']
 lista7 = [1, 2, True, 'Dacio', 'd', [1, 2, 3], 3334455566]
+
+
+
+
+
+
+
+
 
 
 
