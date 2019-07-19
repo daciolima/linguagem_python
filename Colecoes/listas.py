@@ -8,7 +8,7 @@ Linguagens C/JAVA esses arrays devem ser de tamanho fixo e somente um tipo de da
 
 Lista em Python é dinâmica e tamanho ilimitado, ou seja, aceita qualquer tipo de dado e o limite vai de acordo com a memória do computador
 
-
+Listas são mutáveis, ou seja pode ser alteradas.
 
 # Podemos checar se determinado valor está na lista
 num = 18
