@@ -14,5 +14,13 @@ def dizer_oi():
     print('Oi!!!')
 
 
+# Passando função como variável
+def ola():
+    print('Olá pessoal')
+
+variavel = ola
+variavel()
+
+
 
 
