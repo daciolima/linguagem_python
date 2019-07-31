@@ -24,7 +24,7 @@ for lista in listas:
 velha = [['X' if numero % 2 == 0 else '0' for numero in range(1, 4) for valor in range(1, 4)]]
 print(velha)
 
-print([[]])
+print([['*' for i in range(1, 4)] for j in range(1, 4)])
 
 
 
