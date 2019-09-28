@@ -1,0 +1,6 @@
+colorama==0.4.1
+et-xmlfile==1.0.1
+jdcal==1.4.1
+openpyxl==3.0.0
+python-pdf==0.35
+utils==0.9.0
