@@ -17,6 +17,7 @@
 
 """
 
+
 with open('file2.txt', 'w', encoding="utf-8") as arquivo:
     arquivo.write('Estou aprendendo Python!!')
     arquivo.write('Linguagem é muito bacana')
@@ -25,6 +26,7 @@ with open('file2.txt', 'w', encoding="utf-8") as arquivo:
 
 with open('numeros.txt', 'w', encoding="utf-8") as numeros:
     numeros.write('Dacio lima ' * 1000)
+
 
 with open('frutas.txt', 'w', encoding="utf-8") as frutas:
     while True:
