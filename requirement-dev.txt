@@ -4,3 +4,4 @@ jdcal==1.4.1
 openpyxl==3.0.0
 python-pdf==0.35
 utils==0.9.0
+send2trash=1.5.0
