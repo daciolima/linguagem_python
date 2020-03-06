@@ -16,7 +16,7 @@ cachorro = namedtuple('Cachorro', 'idade raca nome')
 # Forma 2
 cachorro2 = namedtuple('Cachorro', 'idade, raca, nome')
 
-#Forma3
+# Forma3
 cachorro3 = namedtuple('cachorro', ['idade', 'raca', 'nome'])
 
 

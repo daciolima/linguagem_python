@@ -29,7 +29,7 @@ for chave in receita.values():
 
 # Desempacotamento de dicionários
 print(receita.items())
-for chave,valor in receita.items():
+for chave, valor in receita.items():
     print(f'Chave={chave} e Valor={valor}')
 
 # Soma, Valor Maximo, Valor Mínimo, Tamanho
