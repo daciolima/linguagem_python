@@ -82,7 +82,7 @@ class Usuario:
             return True
         return False
 
-    def nome_comleto(self):
+    def nome_completo(self):
         return f'{self.__nome} {self.__sobrenome}'
 
 
@@ -93,8 +93,8 @@ print(Produto.desconto(p1, 50))
 
 # Exemplo 2 de Método de instancia
 user = Usuario('Dacio', 'Lima', 'dacio@email.com', '1234')
-print(user.nome_comleto())
-print(Usuario.nome_comleto(user))
+print(user.nome_completo())
+print(Usuario.nome_completo(user))
 
 # Exemplo de entrada de senha com criptografia
 nome = input('Informe nome: ')
@@ -118,3 +118,50 @@ if user.chegar_senha(senha):
 else:
     print('Acesso Negado!!!')
 print(f'Senha do User criptografada: {user._Usuario__senha}') # Forma não recomendada
+
+
+# Métodos de Classe
+# Para se criar um Método de classe deve-se usar o decorator @class_method marcando o metodo a ser de classe
+# recebendo o parâmetro (cls) que é a própria classe
+# Metodos de Classe usa atributos apenas de classe, ele não tem acesso a atributos de instância dos
+# objetos gerados dessa classe.
+# Metodos de Classe em Python são conhecidos em outras linguagens também como métodos estáticos, lembrando que
+# em Python tem seus próprios métodos estáticos assinados com o decorator @staticmethod
+# No método de estático em Python é quando o método, criando dentro de uma classe, não tem acesso a atributos
+# de instancias e nem de classe, ou seja, processa algo isolado e sendo acessivel tanto pela instância como
+# pela classe.
+class Aluno:
+
+    contador = 0
+
+    # Método de Classe
+    @classmethod
+    def conta_aluno(cls):
+        print(f'Temos {cls.contador} alunos no sistema')
+
+    @staticmethod
+    def imprime():
+        return 'Imprimindo algo do método estático'
+
+    def __init__(self, nome, email):
+        self.__id = Aluno.contador + 1
+        self.__nome = nome
+        self.__email = email
+        Aluno.contador = self.__id
+
+    # Criaão de um Método de instância privado
+    def __gera_usuario(self):
+        return f'{self.__email.split("@")[0] + str(self.__id)}'
+
+
+# Chamando método de classe
+aluno = Aluno('Dacio Lima', 'daciolima30@hotmail.com')
+Aluno.conta_aluno() # Forma correta de uso do método de classe
+aluno.conta_aluno() # Possível ser usado, mas não recomendável
+
+# Chamando um método de instância privado
+print(aluno._Aluno__gera_usuario())  # Acesso, de forma não recomendada
+
+# Chamado um método estático
+print(aluno.imprime())
+print(Aluno.imprime())
