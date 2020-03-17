@@ -13,6 +13,8 @@ tearDown() -> É executado ao final de cada método de teste. É útil para excl
 
 import unittest
 
+# Estrutura do Hook
+
 class ModuloTest(unittest.TestCase):
 
     def setUp(self):

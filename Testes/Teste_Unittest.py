@@ -39,5 +39,5 @@ assertNotIsInstance(a, b)  not isinstance(a, b)
 
 """
 
-# Prática - Utilizando a abordagem TDD nos arquivos atividades_unittest.py e testes.py
+# Prática - Utilizando a abordagem TDD nos arquivos atividades_unittest.py e atividades_test_case.py
 
