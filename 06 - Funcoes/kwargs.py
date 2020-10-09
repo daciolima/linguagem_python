@@ -23,6 +23,7 @@ cores_favoridas(marcos='amarelo', dacio='verde', wal='roxo')
 
 # Exemplo 2
 def cumprimento_especial(**kwargs):
+    # Se a chave 'dacio' estiver em kwargs e a chave 'dacio' for 'Python'
     if 'dacio' in kwargs and kwargs['dacio'] == 'Python':
         return f'Você recebeu um cumprimento Pythonico!'
     elif 'dacio' in kwargs:
